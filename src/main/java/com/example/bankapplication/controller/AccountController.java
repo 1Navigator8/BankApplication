@@ -18,15 +18,12 @@ import java.util.UUID;
 @RequestMapping(value = "/auth")
 @RequiredArgsConstructor
 public class AccountController {
-
     private final AccountService accountService;
-
     @GetMapping("/accounts/id/{id}")
     @ResponseStatus(HttpStatus.OK)
     public AccountDto getAccountById(@PathVariable UUID id) {
         return accountService.getAccountById(id);
     }
-
     @GetMapping("/accounts/status/{status}")
     @ResponseStatus(HttpStatus.OK)
     public List<AccountDto> getAllAccountsByStatus(@PathVariable AccountStatus status) {
