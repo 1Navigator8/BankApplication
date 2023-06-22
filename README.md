@@ -9,5 +9,5 @@ Data consist of clients, accounts, products, accounts, transactions and managers
 <!--  [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=*BankApp*+JAVA+BACKEND+DATABASE)](https://git.io/typing-svg) -->
 <h1>Database structure</h1>
 :white_check_mark:<h2>Table client ( Bank's Clients table )</h2> 
-
+|Column| name|	Type|	Description|
 
