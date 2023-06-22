@@ -5,10 +5,10 @@ import com.example.bankapplication.entity.Manager;
 import com.example.bankapplication.entity.enums.ManagerStatus;
 import com.example.bankapplication.mapper.ManagerMapper;
 import com.example.bankapplication.repository.ManagerRepository;
+import com.example.bankapplication.service.ManagerService;
 import com.example.bankapplication.service.exception.ErrorMessage;
 import com.example.bankapplication.service.exception.ManagerExistException;
 import com.example.bankapplication.service.exception.ManagerNotFoundException;
-import com.example.bankapplication.service.ManagerService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -23,10 +23,8 @@ import java.util.UUID;
 @RequiredArgsConstructor
 @Slf4j
 public class ManagerServiceImpl implements ManagerService {
-
-    private final ManagerMapper managerMapper;
     private final ManagerRepository managerRepository;
-
+    private final ManagerMapper managerMapper;
 
     @Override
     @Transactional(readOnly = true)
@@ -62,7 +60,7 @@ public class ManagerServiceImpl implements ManagerService {
     }
 
 
-    private void checkManagerExist(String firstName, String lastName){
+    private void checkManagerExist(String firstName, String lastName) {
         Manager existManager = managerRepository.findByFirstNameAndLastName(firstName, lastName);
         if (existManager != null)
             throw new ManagerExistException("The manager with the same firstName and lastName already exists");

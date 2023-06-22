@@ -2,6 +2,7 @@ package com.example.bankapplication.service.impl;
 
 import com.example.bankapplication.dto.ClientDto;
 import com.example.bankapplication.entity.Client;
+import com.example.bankapplication.entity.enums.ClientStatus;
 import com.example.bankapplication.mapper.ClientMapper;
 import com.example.bankapplication.repository.ClientRepository;
 import com.example.bankapplication.service.ClientService;
@@ -27,6 +28,17 @@ public class ClientServiceImpl implements ClientService {
     private final ClientRepository clientRepository;
 
     @Override
+    @Transactional(readOnly = true)
+    public List<ClientDto> getAllClientsByStatus(ClientStatus status) {
+        log.info("Get clients with status {}", status);
+        return clientMapper.clientsToClientsDto
+                (clientRepository.findAllByStatus(status).
+                        orElseThrow(
+                                () -> new ClientNotFoundException
+                                        (ErrorMessage.CLIENT_NOT_FOUND_BY_STATUS)));
+    }
+
+    @Override
     public List<ClientDto> getAllClients() {
         log.info("Get all clients");
         return clientMapper.clientsToClientsDto
@@ -45,11 +57,12 @@ public class ClientServiceImpl implements ClientService {
     }
 
     @Override
+    @Transactional
     public ClientDto addNewClient(ClientDto clientDto) {
         log.info("Addition the new Client");
         Client client = clientMapper.toClient(clientDto);
         Client existClient = clientRepository.findByTaxCode(client.getTaxCode());
-        if(existClient != null)
+        if (existClient != null)
             throw new ClientExistException("The client with the same Tax Code already exists");
 
         client.setId(UUID.randomUUID());
@@ -59,5 +72,12 @@ public class ClientServiceImpl implements ClientService {
 
         clientRepository.save(client);
         return clientMapper.toDto(client);
+    }
+
+    @Override
+    @Transactional
+    public void deleteClientById(UUID id) {
+        log.info("Deleting client {}", id);
+        clientRepository.deleteById(id);
     }
 }

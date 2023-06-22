@@ -9,7 +9,6 @@ import java.util.Optional;
 import java.util.UUID;
 
 public interface AccountRepository extends JpaRepository<Account, UUID> {
-
     Optional<List<Account>> findAllByStatus(AccountStatus status);
 
     Optional<Account> findAccountById(UUID id);

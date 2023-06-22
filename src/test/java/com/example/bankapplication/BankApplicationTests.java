@@ -1,9 +1,10 @@
 package com.example.bankapplication;
 
+
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+@SpringBootTest(classes = BankApplicationTests.class)
 class BankApplicationTests {
 
     @Test
