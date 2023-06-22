@@ -1,4 +1,4 @@
-<h1 align="center">Hi there, I'm <a href="https://tel-ran.de/de" target="_blank">IvanZubenko</a> 
+<h1 align="center">Hi there, I'm <a href="" target="_blank">IvanZubenko</a> 
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 <h3 align="center">Bank App Project [Backend] + [Database]
 There is a prototype of the BackEnd Bank's Core Services data.
