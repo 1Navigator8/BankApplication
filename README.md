@@ -8,8 +8,9 @@ Data consist of clients, accounts, products, accounts, transactions and managers
 <img src="https://github.com/1Navigator8/BankApplication/blob/master/project%20diagram.jpg"
 <!--  [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=*BankApp*+JAVA+BACKEND+DATABASE)](https://git.io/typing-svg) -->
 <h1>Database structure</h1>
-:white_check_mark:<h2>Table client ( Bank's Clients table )</h2> 
+:white_check_mark:<h2>TABLE CLIENT ( Bank's Clients table )</h2> 
 |COLUMN NAME |	TYPE |	DESCRIPTION |
+--- | --- | ---
 |id	| int |	id key of row - unique, not null, primary key|
 manager_id	short	manager id
 status	byte	client's status -124 bis 125
