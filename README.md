@@ -8,3 +8,4 @@ Data consist of clients, accounts, products, accounts, transactions and managers
 <h1>Database structure</h1>
 <h2>Table client ( Bank's Clients table )</h2> 
 
+:wehite_check_mark:
