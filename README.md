@@ -54,7 +54,7 @@ Data consist of clients, accounts, products, accounts, transactions and managers
 
 
 |COLUMN NAME |	TYPE |	DESCRIPTION |
---- | --- | ---
+:--- | :--- | :---
 |id	|int|	id key of row - unique, not null, primary key
 |manager_id|	short|	manager id
 |product_name|	varchar(70)|	product's name
