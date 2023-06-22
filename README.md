@@ -10,6 +10,17 @@ Data consist of clients, accounts, products, accounts, transactions and managers
 <h1>Database structure</h1>
 :white_check_mark:
 
+## TABLE MANAGER (Bank's managers) 
+
+|COLUMN NAME |	TYPE |	DESCRIPTION |
+--- | --- | ---
+|id|	short|	id key of row - unique, not null, primary key
+|first_name|	varchar(50)|	manager's name
+|last_name|	varchar(50)|	manager's surname
+|status|	byte|	manager's status -124 bis 125
+|description|	varchar(255)|	description of transaction
+|created_at|	timestamp|	timestamp of row creation
+
 ## TABLE CLIENT (Bank's Clients table) 
 
 |COLUMN NAME |	TYPE |	DESCRIPTION |
@@ -25,6 +36,7 @@ Data consist of clients, accounts, products, accounts, transactions and managers
 |phone|	varchar(20)|	client's phone
 |created_at|	timestamp|	timestamp of row creation
 |updated_at|	timestamp|	timestamp of last update
+
 
 ## TABLE ACCOUNT (Bank's accounts table)
 |COLUMN NAME |	TYPE |	DESCRIPTION |
@@ -67,3 +79,18 @@ Data consist of clients, accounts, products, accounts, transactions and managers
 |sum|	numeric(15,2)|	amount of agreement
 |created_at|	timestamp|	timestamp of row creation
 |updated_at|	timestamp|	timestamp of last update
+
+
+## TABLE TRANSACTION (Bank's Product table) 
+
+|COLUMN NAME |	TYPE |	DESCRIPTION |
+--- | --- | ---
+|id|	int|	id key of row - unique, not null, primary key
+|debit_account_id|	int|	transaction's debit account
+|credit_account_id|	int|	transaction's credit account
+|type|	byte|	transaction type -124 bis 125
+|amount|	numeric(15,2)|	transaction amount in the account currency
+|description|	varchar(255)|	description of transaction
+|created_at|	timestamp|	timestamp of row creation
+
+
