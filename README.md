@@ -3,7 +3,7 @@
 <h3 aligh="center">    
  
  
- *Final Project written in Java {BackEnd} and DataBase {MySQL}.*
+ **Final Project written in Java {BackEnd} and DataBase {MySQL}.**
  <br/>
  
 Bank App Project [Backend] + [Database]
