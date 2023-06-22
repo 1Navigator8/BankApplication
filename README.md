@@ -14,7 +14,7 @@ Data consist of clients, accounts, products, accounts, transactions and managers
 |COLUMN NAME |	TYPE |	DESCRIPTION |
 --- | --- | ---
 |id	| int |	id key of row - unique, not null, primary key|
-manager_id	short	manager id
+|manager_id |	short |	manager id |
 status	byte	client's status -124 bis 125
 tax_code	varchar(20)	client's TAX code (external ID)
 first_name	varchar(50)	client's name
