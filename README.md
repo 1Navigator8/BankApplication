@@ -4,8 +4,5 @@
 There is a prototype of the BackEnd Bank's Core Services data.
 Data consist of clients, accounts, products, accounts, transactions and managers For currency, as well as for rounding, use the BigDecimal class.
 </h3>
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=*BankApp*+JAVA+BACKEND+DATABASE)](https://git.io/typing-svg)
-<div style="text-align: center;">
-  [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=*BankApp*+JAVA+BACKEND+DATABASE)](https://git.io/typing-svg)
-</div>
+ .[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=*BankApp*+JAVA+BACKEND+DATABASE)](https://git.io/typing-svg).
 <h1>Database structure</h1>
