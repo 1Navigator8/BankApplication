@@ -1,6 +1,6 @@
 <h1 align="center">Hi there, I'm <a href="" target="_blank">IvanZubenko</a> 
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
-<h3 aligh="center">Final Project written in Java using Java {BackEnd} and DataBase {MySQL}.
+<h3 aligh="center">Final Project written in Java {BackEnd} and DataBase {MySQL}.
 Bank App Project [Backend] + [Database]
 There is a prototype of the BackEnd Bank's Core Services data.
 Data consist of clients, accounts, products, accounts, transactions and managers For currency, as well as for rounding, use the BigDecimal class.
@@ -40,5 +40,19 @@ Data consist of clients, accounts, products, accounts, transactions and managers
 |created_at|	timestamp|	timestamp of row creation
 |updated_at|	timestamp|	timestamp of last update
 
+## TABLE PRODUCT (Sets of Bank's available Products) 
 
+
+|COLUMN NAME |	TYPE |	DESCRIPTION |
+--- | --- | ---
+
+|id	|int|	id key of row - unique, not null, primary key
+|manager_id|	short|	manager id
+|product_name|	varchar(70)|	product's name
+|status|	byte|	product's status
+|currency_code|	schort|	currency of product
+|interest_rate|	numeric(6,4)|	interest rate of product
+|limit_credit|	numeric(15,2)|	limit of credit a product ( 0 - no limit, 0 < - limit which can be used)
+|created_at|	timestamp|	timestamp of row creation
+|updated_at|	timestamp|	timestamp of last update
 
