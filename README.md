@@ -30,7 +30,15 @@ Data consist of clients, accounts, products, accounts, transactions and managers
 ## TABLE ACCOUNT (Bank's accounts table)
 |COLUMN NAME |	TYPE |	DESCRIPTION |
 --- | --- | ---
-
+|id|	int|	id key of row - unique, not null, primary key
+|client_tax_code|	varchar(20)|	client's TAX code
+|account_name|	varchar(100)|	a name of account
+|type	|byte|	account type -124 bis 125
+|status|	byte|	status of tne account -124 bis 125
+|balance|	numeric(15,2)|	balance of the account in currency.
+|currency_code|	short|	account currency code
+|created_at|	timestamp|	timestamp of row creation
+|updated_at|	timestamp|	timestamp of last update
 
 
 
