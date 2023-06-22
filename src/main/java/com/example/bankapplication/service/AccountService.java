@@ -1,7 +1,6 @@
 package com.example.bankapplication.service;
 
 import com.example.bankapplication.dto.AccountDto;
-import com.example.bankapplication.entity.Account;
 import com.example.bankapplication.entity.enums.AccountStatus;
 
 import java.util.List;
