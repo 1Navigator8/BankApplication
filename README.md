@@ -4,7 +4,7 @@
  
  
  **Final Project written in Java {BackEnd} and DataBase {MySQL}.**
- <br/>
+
  
 Bank App Project [Backend] + [Database]
 There is a prototype of the BackEnd Bank's Core Services data.
