@@ -8,7 +8,9 @@ Data consist of clients, accounts, products, accounts, transactions and managers
 <img src="https://github.com/1Navigator8/BankApplication/blob/master/project%20diagram.jpg"
  [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=*BankApp*+JAVA+BACKEND+DATABASE)](https://git.io/typing-svg)
 <h1>Database structure</h1>
-:white_check_mark:<h2>TABLE CLIENT ( Bank's Clients table )</h2> 
+:white_check_mark:
+
+## TABLE CLIENT ( Bank's Clients table ) 
 
 
 |COLUMN NAME |	TYPE |	DESCRIPTION |
@@ -24,3 +26,11 @@ Data consist of clients, accounts, products, accounts, transactions and managers
 |phone|	varchar(20)|	client's phone
 |created_at|	timestamp|	timestamp of row creation
 |updated_at|	timestamp|	timestamp of last update
+
+## TABLE ACCOUNT (Bank's accounts table)
+|COLUMN NAME |	TYPE |	DESCRIPTION |
+--- | --- | ---
+
+
+
+
