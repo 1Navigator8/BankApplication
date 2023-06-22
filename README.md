@@ -22,5 +22,5 @@ Data consist of clients, accounts, products, accounts, transactions and managers
 |email|	varchar(60)|	client's e-mail
 |address|	varchar(80)|	client's address
 |phone|	varchar(20)|	client's phone
-|created_at|	timestamp	timestamp of row creation
-updated_at	timestamp	timestamp of last update
+|created_at|	timestamp|	timestamp of row creation
+|updated_at|	timestamp|	timestamp of last update
