@@ -10,8 +10,7 @@ Data consist of clients, accounts, products, accounts, transactions and managers
 <h1>Database structure</h1>
 :white_check_mark:
 
-## TABLE CLIENT ( Bank's Clients table ) 
-
+## TABLE CLIENT (Bank's Clients table) 
 
 |COLUMN NAME |	TYPE |	DESCRIPTION |
 --- | --- | ---
@@ -55,3 +54,16 @@ Data consist of clients, accounts, products, accounts, transactions and managers
 |created_at|	timestamp|	timestamp of row creation
 |updated_at|	timestamp|	timestamp of last update
 
+
+## TABLE AGREEMENT (Bank's - Client's Agreement table) 
+
+|COLUMN NAME |	TYPE |	DESCRIPTION |
+--- | --- | ---
+|id|	int|	id key of row - unique, not null, primary key
+|account_id|	int|	client's account
+|product_id|	int|	product id (table product)
+|interest_rate|	numeric(6,4)|	current interest rate of agreement
+|status|	byte|	agreement's status -124 bis 125
+|sum|	numeric(15,2)|	amount of agreement
+|created_at|	timestamp|	timestamp of row creation
+|updated_at|	timestamp|	timestamp of last update
