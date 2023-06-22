@@ -17,10 +17,10 @@ Data consist of clients, accounts, products, accounts, transactions and managers
 |manager_id |	short |	manager id |
 |status|	byte|	client's status -124 bis 125
 |tax_code|	varchar(20)|	client's TAX code (external ID)
-first_name	varchar(50)	client's name
-last_name	varchar(50)	client's surname
-email	varchar(60)	client's e-mail
-address	varchar(80)	client's address
-phone	varchar(20)	client's phone
-created_at	timestamp	timestamp of row creation
+|first_name|	varchar(50)|	client's name
+|last_name|	varchar(50)|	client's surname
+|email|	varchar(60)|	client's e-mail
+|address|	varchar(80)|	client's address
+|phone|	varchar(20)|	client's phone
+|created_at|	timestamp	timestamp of row creation
 updated_at	timestamp	timestamp of last update
